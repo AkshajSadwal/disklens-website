@@ -1,0 +1,26 @@
+{
+  "name": "disklens-product-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone DiskLens product and Windows download website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "lucide-react": "1.72.0",
+    "motion": "14.12.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.14.0",
+    "eslint-config-next": "16.4.6"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
