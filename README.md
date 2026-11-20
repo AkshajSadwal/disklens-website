@@ -7,23 +7,20 @@ This is a **separate marketing and download website** for the DiskLens desktop a
 - Next.js 16 App Router
 - React 19
 - JavaScript / JSX
-- Motion for React (`motion`) for staggered hero reveals, scroll-triggered section reveals, a spring-smoothed scroll progress indicator and subtle 3D hover depth
 - Lucide React icons
-- Custom CSS design system with a cinematic near-black / acid-lime palette, animated SVG light trails and a restrained Swiss grid
+- Custom CSS design system with a cinematic near-black / acid-lime palette, an animated Canvas light field and scroll-driven scenes
 
 ## Features
 
 - Responsive desktop and mobile layouts
-- DiskLens product hero with editable dashboard preview
-- Product features, setup steps, privacy explanation and FAQ
+- Interactive folder map and a multi-level sunburst in a laptop showcase
+- A scroll-driven sample scan console, cleanup insights, local privacy and FAQ
 - Direct download button for the official Windows installer
 - Reads the latest GitHub Release using the public GitHub Releases API and selects the `DiskLens-Setup-*.exe` asset
 - Pinned v1.1.0 installer fallback so the download remains available when GitHub API requests are rate-limited or unavailable
-- Continuous, slow aurora/light-trail motion behind the hero and download section
-- Animated scan sweep and floating “Index ready” micro-card over the app preview
-- Animated progress bars, sunburst accent, feature-card hover depth, and scroll reveals
-- Sticky navigation with a scroll progress indicator and animated mobile menu
-- Reduced-motion support via `prefers-reduced-motion` and Motion’s `useReducedMotion`, keyboard navigation and accessible landmarks
+- Folder selection highlights the corresponding chart branch and reports its indexed size
+- Sticky navigation, mobile menu and direct links into the searchable product guide
+- Reduced-motion support, keyboard navigation and accessible landmarks
 - No server/database or secret API keys required
 
 ## Requirements
@@ -60,7 +57,7 @@ No private token is used; release metadata comes from GitHub's public API in the
 
 ## Motion and performance
 
-The visual motion is built from a small number of CSS/SVG layers and Motion for React rather than a looping background video. Scroll-linked progress uses Motion’s `useScroll` and `useSpring`; entrance reveals are viewport-triggered and run once. The site honors the operating system’s reduced-motion preference by stopping non-essential continuous motion and removing movement transitions.
+The landing page draws animated strands and moving particles on a Canvas that changes shape with scroll position. The scan console updates as desktop visitors scroll through the steps. The steps also work as buttons. Reduced-motion mode stops the Canvas and lays out the console without pinning. Both storage demos use sample data.
 
 ## Deploy
 

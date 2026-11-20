@@ -436,7 +436,7 @@ export default function DocsSite() {
         <div className={styles.mastInner}>
           <div className={styles.breadcrumb}><Link href="/">DiskLens</Link><ChevronRight size={13} />Documentation</div>
           <div className={styles.mastGrid}>
-            <div><div className={styles.eyebrow}><span />THE DISKLENS FIELD GUIDE</div><h1>Understand the disk.<br /><em>Own the decisions.</em></h1><p>Product guides, practical workflows and technical reference for DiskLens — from the first scan to a careful cleanup review.</p></div>
+            <div><h1>DiskLens <em>field guide.</em></h1><p>Install DiskLens, choose what to scan and use the results to review your storage.</p></div>
             <div className={styles.mastAside}><span>DOCUMENTATION SET</span><strong>14 guides</strong><small>Grounded in the current public application source and v1.1.0 release.</small><div className={styles.mastBadges}><Tag>Windows 10 / 11</Tag><Tag>Local-first</Tag><Tag>v1.1.0</Tag></div></div>
           </div>
         </div>
